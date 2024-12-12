@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Domine:wght@600&family=Space+Mono&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body{
+            font-family: 'Domine', serif;
+            color:white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url(./I&T/man-7847247_1920.jpg);
+        }
+        .left{
+            position: absolute;
+            left: 24px;
+            top: 10px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+        .mid{
+            display: block;
+            margin: 20px auto;
+            width: 38%;
+            /* border: 2px solid green; */
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 25px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+        .navbar{
+            display: inline-block;
+        }
+       .navbar li{
+            display: inline-block;
+            font-size: 15px;
+        }
+        .navbar li a{
+             color: white;
+             text-decoration: none;
+             padding: 13px;
+        }
+        .navbar li a:hover,.navbar li a:active{
+            text-decoration: underline;
+            color: grey;
+        }
+         .left img{
+            width: 100px;
+            filter: invert(100%);
+         }
+         .left div{
+            text-align: center;
+            line-height: 15 px;
+         }
+         .btn{
+            padding: 4px 24px;
+            margin:0px 5px;
+            cursor: pointer;
+            border: 2px solid grey;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            font-size: 14px;
+            font-family: 'Domine', serif;
+         }
+         .btn:hover{
+            color: rgb(158, 158, 158)
+         }
+         .container{
+            /* border: 2px solid green; */
+            margin: 130px 160px;
+            padding: 25px 25px;
+            width: 38%;
+            border-radius: 10px;
+         }
+         .form-group input{
+            padding: 4px;
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            font-family: 'Domine', serif;
+         }
+         h1{
+            text-align: center;
+         }
+         .container .btn{
+            display: block;
+            width: 80%;
+            margin: auto;
+            padding: 5px;
+         }
+         .container .btn a{
+            text-decoration: none;
+         }
+         .qoutes{
+            position: absolute;
+            right: 120px;
+            bottom: 160px;
+            color: rgb(11, 248, 216);
+         }
+    </style>
+</head>
+<body>
+   <header>
+    <div class="left">
+        <img src="./I&T/download.png" alt="">
+        <div>Spark Fitness</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Fitness calculator</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul></div>
+    <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">Mail US</button>
+    </div>
+   </header> 
+   <div class="container">
+    <h1>Join the Best gym in Los Dors</h1>
+    <form action="noaction.php" class="form-group">
+        <input type="text" name="Name" placeholder="Enter your name">
+        <input type="text" name="Age" placeholder="Enter your age">
+        <input type="text" name="Gender" placeholder="Enter your gender">
+        <input type="text" name="Locality" placeholder="Enter your locality">
+    </form>
+    <button class="btn"><a href="" target="_blank">Submit</a></button>
+   </div>
+   <div class="qoutes">
+    <h1>
+        "THE MORE YOU SWET <br><br><br><br>
+        THE LESS YOU BLEED"
+    </h1>
+   </div>
+</body>
+</html>
